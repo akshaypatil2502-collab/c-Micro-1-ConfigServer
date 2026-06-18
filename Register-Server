@@ -1,4 +1,6 @@
 server.port=8761
 
+spring.config.import=optional:configserver:http://localhost:1578
+
 eureka.client.register-with-eureka=false
 eureka.client.fetch-registry=false
