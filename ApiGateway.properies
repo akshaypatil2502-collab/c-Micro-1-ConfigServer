@@ -1,13 +1,13 @@
 spring.config.import=optional:configserver:http://localhost:1212
 server.port=1578
 
-#configuration for employee
+configuration for employee
 
 spring.cloud.gateway.server.webflux.routes[0].id=Employee-Data
 spring.cloud.gateway.server.webflux.routes[0].uri=lb://C-MICRO-1-EMPLOYEE
 spring.cloud.gateway.server.webflux.routes[0].predicates[0]=Path=/employee/**
 
-#Configuration for dept
+Configuration for dept
 
 spring.cloud.gateway.server.webflux.routes[1].id=for-dept
 spring.cloud.gateway.server.webflux.routes[1].uri=lb://C-MICRO-1-DEPARTMENT
